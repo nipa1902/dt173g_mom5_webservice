@@ -1,0 +1,92 @@
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: $fontStack;
+    padding: $padding;
+
+    h1, h2, h3 {
+        padding-top: $padding;
+        padding-bottom: $padding;
+    }
+}
+
+
+// The course output
+#courseoutput {
+    display: grid;
+    border: 2px solid gray;
+
+    .grid-item {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.1fr; // The 0.1 at the end pushes the delete button to the right
+    }
+
+    button {
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    }
+
+    .grid-item:nth-child(even) {background: $colorLightBlue;}
+    .grid-item:nth-child(odd) {background: $colorDarkBlue;}
+}
+
+// The create form
+#createform {
+    padding-top: 20vh;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10vh;
+
+    .formgrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 1.5rem;
+    
+        .form-item {
+        padding: $padding;
+    
+            input {
+            padding: $padding;
+            width: 80%;
+            }
+        }
+    
+    }
+
+    // Include the component for styling big green button on this ID
+    #createButton {
+    @include confirmButton;
+    }
+}
+
+
+// MEDIA QUERY 900 PX
+@media screen and (max-width: 900px) {
+
+    #courseoutput {
+
+        .grid-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+
+            span {
+            line-height: 1.5rem;
+            }
+
+            button {
+            max-width: 25%;
+            float: right;
+            }
+
+        }
+    }
+
+    #createform {
+        .formgrid {
+            grid-template-columns: 1fr;
+            }
+    }
+
+}

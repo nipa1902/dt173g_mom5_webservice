@@ -1,0 +1,10 @@
+// Create button
+
+@mixin confirmButton {
+    float: right;
+    font-size: 2rem;
+    padding: 1rem;
+    background: $colorHappyGreen;
+    border: 1px solid black;
+    cursor: pointer;
+}

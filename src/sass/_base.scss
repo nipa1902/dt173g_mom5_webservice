@@ -1,0 +1,23 @@
+
+
+// FONT SIZES (not using h4 right now)
+$p: 1.1rem;
+$h1: 1.75rem;
+$h2: 1.65rem;
+$h3: 1.55rem;
+
+$fontStack: 'Roboto', sans-serif;
+
+$colorLightBlue: #7dbaff9a;
+$colorDarkBlue: #a6d0ff86;
+$colorHappyGreen: #43d343;
+
+$padding: 1rem;
+
+p {font-size: $p;}
+h1 {font-size: $h1;}
+h2 {font-size: $h2;}
+h3 {font-size: $h3;}
+a {text-decoration: none;}
+
+

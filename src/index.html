@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nipa1902 DT173G Moment 5</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div id="container">
+
+<h1>Nipa1902 DT173G Moment 5 - REST API och konsumering</h1>
+
+<h2>Kurser inom programmet jag läser</h2>
+
+<!-- Filled by consuming REST API-->
+<div id="courseoutput">
+
+</div> <!-- End REST API -->
+
+<div id="createform">
+
+    <h2> Lägg till kurs </h2>
+    <h3> Glöm inte "http://" i länk!</h3>
+
+    <form>
+
+    <div class="formgrid">
+        <div class="form-item">
+        <label for="code">Kurskod:</label><br>
+        <input type="text" id="courseCode" name="code" value=""><br>
+        </div>
+
+        <div class="form-item">
+        <label for="name">Kursnamn:</label><br>
+        <input type="text" id="courseName" name="name" value=""><br>
+        </div>
+
+        <div class="form-item">
+        <label for="progression">Kursprogression:</label><br>
+        <input type="text" id="courseProgression" name="progression" value=""><br>
+        </div>
+        
+        <div class="form-item">
+        <label for="courseplan">Kursplan (länk):</label><br>
+        <input type="text" id="courseplan" name="courseplan" value=""><br>
+        </div>
+    </div>
+
+        <input id="createButton" type="submit" value="Skicka">
+        </div>
+      </form> 
+
+
+</div>
+
+
+
+</div>
+
+
+    
+</body>
+<script src="js/main.js"></script>
+</html>
